@@ -7,9 +7,6 @@ body{
  /* footbal banner start from here  */
 
 
-
-
-
 .football-banner{
 
     background-color: blue;
@@ -119,7 +116,7 @@ body{
  .footer-img{
      height: 70PX;
      width: 250PX;
-    
+     background-color: #060930;;
     
  }
 
@@ -170,10 +167,16 @@ footer p{
  
 /* responsip part start from here*/
 
-/* RESPONSIP FOR ipad */
+
+/* responsip for ipad */
 @media (max-width: 1000px){
    
-        .banner-text{
+    .football-banner{
+
+        flex-direction:column;
+     
+    }
+    .banner-text{
         width: 100%;
         margin-bottom:30px;
     }
@@ -194,10 +197,14 @@ footer p{
         grid-template-columns: repeat(2,1fr);
 
     }
+
+    .footer-from{
+        display: flex;
+        justify-content: center;
+    }
 }
 
-
-/* RESPONSIP FOR PHONE */
+/* Responsip for phone */
 @media (max-width:600px){
     
     .players{
@@ -207,11 +214,6 @@ footer p{
 
     .footer-contenar{
         margin:30px 8%;
-    }
-
-    footer input{
-        
-        width: 200px;  
     }
 
     
