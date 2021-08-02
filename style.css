@@ -1,0 +1,220 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding:0 ;
+}
+
+ /* footbal banner start from here  */
+
+
+
+
+
+.football-banner{
+
+    background-color: blue;
+
+    display: flex;
+ 
+
+}
+
+.inner-banner-text{
+    width: 50%;
+}
+
+.banner-test-price{
+    color: #FF136F;
+}
+
+.bennar-buy-btn{
+    background-image: linear-gradient(#ff589B,#FF589B);
+    padding:10px 20px;
+    border: none;
+    color: white;
+    width: 100px;
+    margin-bottom: 30px;
+    transition:transform 2s;
+  
+
+}
+.bennar-buy-btn:hover{
+    transform: scale(1.5, 1.4);
+}
+
+.banner-text, .banner-image{
+    width: 50%;
+}
+
+.banner-image img{
+    width: 50%;
+    padding: 20px;
+    transition:transform 1s;
+}
+.banner-image img:hover{
+ 
+    transform: scaleX(1.5);
+    
+}
+
+.banner-text{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    color: white;
+    font-size: 29px;
+}
+.banner-image{
+   display: flex;
+   justify-content: center;
+   
+}
+
+
+ /* footbal banner end here  */
+
+
+ 
+
+/* footbal Player sitals stye start from here */
+
+.players-container{
+
+    background-color: #F4F4F4;
+    margin:70px 15%;
+
+
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:25px;
+
+}
+
+.player-box{
+
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    
+}
+.player-box img{
+    width: 100%;          
+  
+}
+
+
+
+
+/* footbal Player sitals stye end  here */
+
+
+
+
+ /* footer start */
+
+ .footer-img{
+     height: 70PX;
+     width: 250PX;
+    
+    
+ }
+
+ .col-lg-6{
+    text-align: center;
+
+
+ }
+ footer{
+    padding:1%;
+    color:white;
+    background: #060930;
+}
+
+footer p{
+    line-height: 32px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.social-menus{
+    text-align: center;
+}
+
+.iccon-style{
+    color:white;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+    border:1px solid white;
+    margin:0 10px;
+    transition: .4s;
+    text-align: center;
+}
+.iccon-style:hover{
+    background-color: gray;
+    transform:scale(1.2);
+  
+}
+ /* footer end */
+
+
+
+
+
+
+ 
+/* responsip part start from here*/
+
+/* RESPONSIP FOR ipad */
+@media (max-width: 1000px){
+   
+        .banner-text{
+        width: 100%;
+        margin-bottom:30px;
+    }
+
+    .banner-image {
+        width: 100%;;
+    }
+
+    .banner-image img{
+        width: 80%;
+    }
+    .inner-banner-text{
+        width: 70%;
+    }
+
+    
+    .players{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+}
+
+
+/* RESPONSIP FOR PHONE */
+@media (max-width:600px){
+    
+    .players{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .footer-contenar{
+        margin:30px 8%;
+    }
+
+    footer input{
+        
+        width: 200px;  
+    }
+
+    
+    
+}
+    
